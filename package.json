@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "s3-upload": "aws s3 sync build/ s3://aws-deploy-smt",
+    "cloud-front-invaldaion": "aws cloudfront create-invalidation --distribution-id E2S7X0AJWOFEPC --path '/*'"
   },
   "eslintConfig": {
     "extends": [
